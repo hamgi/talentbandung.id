@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../images/Bg.png) repeat-x;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+ 	font-family: 'Playfair Display', serif;
+ 	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	width: 100%;
+	max-width: 475px;
+	padding: 0.8%;
+}
+
+
+#size-content {
+	max-width: 1125px;
+	margin: 0 auto;
+}
+
+.hero {
+	/*background: #ccc;*/
+	margin-top: 92px;
+	margin-bottom: 150px;
+	line-height: 380%;
+}
+
+.hero h1 {
+	font-size: 400%;
+	line-height: 110%;
+}
+
+.hero h1 span.subtittle {
+	font-size: 70%;
+}
+
+span.subtittle {
+	font-family: 'Caveat', cursive;
+}
+
+.hero p {
+	font-size: 120%;
+}
+
+.hero button, .hero button i {
+	padding: 0.8%;
+}
+
+.daftar-taman {
+	width: 31.11111111111111%;
+	margin: 1%;
+	float: left;
+}
+
+.taman {
+	width: 100%;
+	
+}
+
+.taman a.lost {
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+}
+
+.taman img {
+	width: 100%;
+	height: 100%;
+	max-width: 356px;
+	max-height: 219px;
+}
+
+.taman-detail {
+	width: 100%;
+	margin-top: 0;
+	background: #f4f4f4;
+}
+
+.taman-detail h2 a span.subtittle {
+color: #7c7d7f;
+}
+
+.taman-detail h2 a span.title {
+	color: #000;
+}
+
+.taman-detail p {
+	color: #98999d;
+}
+
+.clearfix {
+	clear: both;
+}
+.footer {
+	margin: 120px 0 90px;
+}
