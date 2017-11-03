@@ -1,0 +1,234 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/detail1/bg-balkot.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+#side-content {
+	/*background: #ccc;*/
+	max-width: 1125px;
+	margin: 0 auto;
+}
+
+.hero {
+	padding: 15% 15px 97px; 
+	text-align: center;
+}
+
+.title {
+	font-family: 'Playfair Display';
+}
+
+.subtittle {
+	font-family: 'Caveat';
+	font-weight: normal;
+}
+
+.title,
+.subtittle {
+	display: block;
+	line-height: 100%;
+	/*background: #ccc;*/
+}
+
+.hero .title {
+	font-size: 72px;
+	/*background: #ccc;*/
+}
+
+.hero .subtittle {
+	font-size: 64px;
+	/*background: #eee;*/
+}
+
+.hero p {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 9.5%;
+	font-size: 18px;
+	line-height: 160%;
+	/*background: #fcd;*/
+}
+
+/* GRID */
+.grid-layout {
+	/*background: #000;*/
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.grid-layout:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.ar-lef {
+	left: 0;
+}
+
+.ar-rig {
+	right: 0;
+}
+
+.ar-lef,
+.ar-rig {
+	top: 45%;
+	/*background: #edd;*/
+	position: absolute;
+	float: left; 
+	padding: 0 2px;
+}
+
+.grid-item {
+	/*background: #ccc;*/
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+}
+
+.grid-item:nth-child(1n+1) {
+	margin-left: 5%;
+}
+
+.grid-item:nth-child(2n+1) {
+	margin-left: 0;
+}
+
+.grid-item:nth-child(3n+1) {
+	margin-left: 0;
+}
+
+figure.fg-dw {
+	margin: 0;
+	position: relative;
+}
+
+figure.fg-dw img {
+	width: 100%;
+}
+
+figure.fg-dw span {
+	background: #fff;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 28% 0 0 44%;
+	transition: all 0.3s ease-in;	
+}
+
+figure.fg-dw span:hover {
+	opacity: 0.5;
+}
+
+figure.fg-dw span i {
+	color: #000;
+	border: none;
+	cursor: pointer;
+	font-size: 300%;
+	background: none;
+}
+
+.map {
+	margin-top: 1%;
+	position: relative;
+	overflow: hidden;
+}
+
+.maplef, .maprig {
+	position: absolute;
+	bottom: 18%;
+	width: 48.5%;
+}
+
+.maplef a, .maprig a {
+	text-decoration: none;
+	padding: 10px;
+	background: #22b8cf;
+	color: #fff;
+	transition: all 0.3s ease-in;
+}
+
+.maplef a:hover, .maprig a:hover {
+	color: #000;
+}
+
+.maplef a {
+	background: #22b8cf;
+	color: #fff;
+}
+
+.maprig a {
+	background: #329af0;
+	color: #fff;
+}
+
+.maplef {
+	text-align: right;
+	/*background: #000;*/
+}
+
+.maprig {
+	right: 0;
+	/*background: #ccc;*/
+}
+
+figure.fg-map img {
+	width: 100%;
+	height: 100%;
+}
+
+footer {
+	margin: 3.8% auto;
+	text-align: center;
+}
+
+/* Meida Screen */
+@media screen and (max-width: 990px) {
+	.ar-lef,
+	.ar-rig {
+		top: 75%;
+	}
+	.grid-item {
+		width: 50%;
+	}
+	.grid-item:nth-child(1n+1){
+		margin: 0 auto;
+	}
+	.grid-item:nth-child(3n+1){
+		margin-left: 25%;
+	}
+	figure.fg-dw span {
+		padding-top: 30%;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	figure.fg-dw span {
+		padding-top: 25%;
+		padding-left: 42%;
+	}	
+}
+
+@media screen and (max-width: 480px) {
+	.ar-lef,
+	.ar-rig {
+		display: none;
+	}
+	.grid-item:nth-child(3n+1) {
+		margin-left: 0;
+	}
+	.grid-item {
+		width: 100%;
+	}
+}
