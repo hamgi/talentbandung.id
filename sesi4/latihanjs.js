@@ -64,11 +64,15 @@ for ( i=0; i < buah.length ; i++){
 }
  */
 
-function greet(){
-var nama= document.getElementById("nama").value;
-var email= document.getElementById("alamat_email").value;
-alert("nama : " + nama + ", email : " + email);
-};
 
-var btn = document.getElementById("greet");
-btn.addEventListener("click", greet);
+
+function greeting(event){
+    var nama = event.target.textContent;
+    return alert("Halo " + nama);
+}
+
+var app = document.getElementsByClassName('greet');
+
+for (var i = 0; i < app.length; i++) {
+    app[i].addEventListener('click' , greeting);
+}
