@@ -1,0 +1,45 @@
+#sec-1
+{
+  background-color: cyan;
+  padding: 35px;
+  text-align: center;
+
+}
+
+.data-table
+{
+  width: 60%;
+  margin: 0 20% 0 20%;
+}
+
+.form-sec-2
+{
+  background-color: #eee;
+  margin: 5% 20% 0 20%;
+  padding: 3% 0 0 0;
+
+}
+
+.form-sec-2:hover
+{
+  box-shadow: 10px 10px 35px #888888;
+}
+
+.artikel
+{
+  padding: 2% 20% 0 20%;
+}
+
+.artikel h1
+{
+  color: red;
+  font-size: 45px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif, serif;
+  line-height: 2px;
+}
+
+.artikel  p
+{
+  line-height: 20px;
+}

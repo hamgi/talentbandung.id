@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #F8F9FA;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.site-content{
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.hero{
+  /*height: 718px;*/
+  text-align: center;
+  padding: 120px 15px;
+}
+
+.subtitle{
+  font-family: 'Caveat';
+  font-weight: normal;
+}
+
+.title{
+  font-family: 'Playfair Display';
+}
+
+.title, .subtitle{
+  display: block;
+}
+
+.hero .title{
+  font-size: 72px;
+}
+
+.hero .subtitle{
+  font-size: 64px;
+}
+
+.hero p {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-weight: 300;
+  /*margin-bottom: 60px;*/
+}
+
+.hero form{
+  max-width: 550px;
+  margin: 70px auto 0;
+  position: relative;
+  outline: none;
+}
+
+.hero form input{
+  width: 100%;
+  font-size: 16px;
+  padding: 20px 70px 25px 25px;
+  border: 2px solid white;
+  border-radius: 45px;
+  box-shadow: 0 10px 13px rgba(0,0,0,0.1);
+  outline: none;
+  transition: border 300ms ease-in;
+}
+
+.hero form input:focus{
+  border: 2px solid #52adfe;
+}
+
+.hero form button{
+  position: absolute;
+  outline: none;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #e3a6a9;
+  font-size: 36px;
+}
+
+@media screen and (max-width:990px){
+  .grid-item{
+    width: 50%;
+  }
+  .grid-item:nth-child(3n+1){
+    clear: none;
+  }
+  .grid-item:nth-child(2n+1){
+    clear: both;
+  }
+}
+
+@media screen and (max-width:480px){
+  .grid-item{
+    width: 100%;
+  }
+}
+
+.grid-layout:after{
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.grid-item{
+  width: 33.333%;
+  float: left;
+  padding: 0 15px;
+}
+
+.grid-item:nth-child(3n+1){
+  clear: both;
+}
+
+.taman{
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  box-shadow: 0 9px 18px rgba(0,0,0,0.5)
+}
+
+.taman a{
+  text-decoration: none;
+}
+
+.taman figure{
+  margin: 0;
+}
+
+.taman figure img{
+  width: 100%;
+}
+
+.taman-detail{
+  padding: 15px;
+  text-align: center;
+}
+
+.taman-detail h2{
+  font-size: 28px;
+  margin-left: 5px 0 15px;
+}
+
+.taman-detail .title{
+  color: #363636;
+}
+
+.taman-detail .subtitle{
+  color: #888;
+}
+
+.taman-detail p{
+  color: #929292;
+  font-size: 14px;
+}
+
+.footer{
+  text-align: center;
+  padding: 90px 15px 40px;
+  color: #535353;
+}
+
+/*======================================== single.html ============================================ */
+
+.hero-single{
+  height: 700px;
+  background-image: url("../images/bg-single.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.hero-single h1{
+  margin: 0;
+}
+
+.hero-single .subtitle{
+  margin-top: 180px;
+  display: inline-block;
+}
+
+.hero-single .title{
+  display: block;
+}
+
+.hero-single p{
+  width: 635px;
+  margin: 100px auto;
+  line-height: 30px;
+}
+
+.slider{
+  text-align: center;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+.g img{
+  margin: 8px;
+}
+
+.g button{
+  border: none;
+  background-color: white;
+  height: 240px;
+  width: 80px;
+}
+.g i{
+  font-size: 50px;
+  font-weight: 1px;
+}
+
+.g{
+  float: left;
+}
+
+.gmap{
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  text-align: center;
+}
+
+.for-button{
+  margin-top: 465px;
+  display: inline-block;
+}
+
+
+.for-button button{
+  height: 55px;
+  width: 300px;
+  padding-bottom: 13px;
+  border-radius: 30px;
+  border: none;
+  margin: 0 8px;
+  color: white;
+  font-size: 18px;
+}
+
+.for-button .button-1{
+  background-color: #22B8CF;
+}
+
+.for-button .button-2{
+  background-color: #329AF0;
+}
+
+.for-button i{
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.btn-text {
+  margin-bottom: 5px;
+}

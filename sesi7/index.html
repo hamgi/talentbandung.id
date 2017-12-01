@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Taman Tematik Bandung</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Playfair+Display:700|Roboto:300,400,400i">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style-project.css">
+  </head>
+  <body>
+    <div class="site-content">
+      <header class="hero">
+        <h1>
+          <span class="subtitle">Jelajah</span>
+          <span class="title">Taman Bandung</span>
+        </h1>
+        <p>Ada lebih dari 20+ Taman Tematik untuk tempat Hang-out Anda</p>
+
+        <form action="" >
+          <input type="text" placeholder="Cari Berdasarkan Lokasi atau Nama Taman">
+          <button type="submit"><i class="ion-ios-search-strong"></i></button>
+        </form>
+
+      </header><!-- headers hero -->
+
+      <div id="app" class="daftar-taman grid-layout">
+        <taman ></taman>
+        <div v-for="taman in dataTaman" class="grid-item">
+          <div class="taman">
+            <figure>
+              <a href="single.html">
+                <img src="images/balkot.jpg" alt="Gambar Balai Kota">
+              </a>
+            </figure>
+            <div class="taman-detail">
+              <h2>
+                <a href="single.html">
+                  <span class="subtitle">Taman</span>
+                  <span class="title">{{taman.nama}}</span>
+                </a>
+              </h2>
+              <p>{{taman.alamat}}</p>
+            </div>
+          </div><!-- class taman -->
+        </div><!-- grid item -->
+      </div><!-- class daftar taman -->
+    </div><!-- class site-content -->
+
+    <footer class="footer">
+      <p>copy Copyright By Talenbandung.id</p>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/vue.js"></script>
+    <script type="text/javascript">
+      Vue.component('item-taman', {
+        props: ['data'],
+        template: '<div class="taman">'+
+          '<figure>'+
+            '<a href="single.html">'+
+              '<img src="{{data.image.thumbnail}}">'+
+            '</a>'+
+          '</figure>'+
+          '<div class="taman-detail">'+
+            '<h2>'+
+              '<a href="single.html">'+
+                '<span class="subtitle">Taman</span>'+
+                '<span class="title">{{data.nama}}</span>'+
+              '</a>'+
+            '</h2>'+
+            '<p>{{data.alamat}}</p>'+
+          '</div>'+
+        '</div>'+
+      '</div>'
+      });
+
+      var app = new Vue({
+        el: '#app',
+        data: {
+          daftarTaman: []
+        },
+        created: function(){
+          this.getData();
+        },
+        computed: {
+          getata: function(){
+            var _this = This$.get('https://ariona.net/talentbandung/', function(data){
+              _this.dataTaman = data
+            });
+          }
+        }
+
+      })
+    </script>
+
+  </body>
+</html>
